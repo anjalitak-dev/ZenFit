@@ -14,7 +14,7 @@ body {
 
 /* Applying same font everywhere except Zenfit */
 .zenfit-text {
-  font-family: 'ZenFit', cursive; /* Specify the unique font for Zenfit */
+  font-family: 'ZenFit', cursive;
 }
 
 /* Navigation Bar */
@@ -366,6 +366,25 @@ button:hover {
 }
 
 /* Media Queries for Responsiveness */
+
+/* Large Screens (Desktops, Laptops) */
+@media screen and (min-width: 1025px) {
+  .cta h1 {
+    font-size: 48px;
+  }
+
+  .cta p {
+    font-size: 18px;
+    max-width: 600px;
+  }
+
+  .workout-grid {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+/* Medium Screens (Tablets) */
 @media screen and (max-width: 1024px) {
   nav .logo span {
     font-size: 20px;
@@ -395,6 +414,7 @@ button:hover {
   }
 }
 
+/* Small Screens (Mobile Landscape) */
 @media screen and (max-width: 768px) {
   nav .logo span {
     font-size: 18px;
@@ -428,13 +448,10 @@ button:hover {
   }
 }
 
+/* Extra Small Screens (Mobile Portrait) */
 @media screen and (max-width: 480px) {
-  nav .logo span {
-    font-size: 16px;
-  }
-
-  .nav-links li {
-    margin: 0 8px;
+  .nav-links {
+    display: none;
   }
 
   .cta h1 {
@@ -446,130 +463,22 @@ button:hover {
     max-width: 350px;
   }
 
+  .workout-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .workout-card {
     width: 100%;
     max-width: 100%;
-  }
-
-  .workout-grid {
-    flex-direction: column;
-    gap: 15px;
   }
 
   .custom-workout-form {
     flex-direction: column;
     gap: 15px;
   }
-}
-/* Footer Section */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
-}
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-section {
-  flex: 1;
-  min-width: 250px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-footer h4 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #ff5722; /* Accent color for headers */
-  text-transform: uppercase;
-}
-
-footer p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ccc; /* Lighter text color for paragraph */
-}
-
-footer .social-links {
-  list-style: none;
-  padding: 0;
-}
-
-footer .social-links li {
-  margin: 10px 0;
-}
-
-footer .social-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Ensures icons and text are aligned */
-  transition: color 0.3s ease;
-  padding: 8px;
-}
-
-footer .social-links li a i {
-  margin-right: 10px;
-  font-size: 20px;
-}
-
-/* Social Media Icons Color on Hover */
-footer .facebook:hover {
-  color: #3b5998;
-}
-
-footer .twitter:hover {
-  color: #1da1f2;
-}
-
-footer .instagram:hover {
-  color: #e4405f;
-}
-
-footer .footer-bottom {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #aaa;
-}
-
-footer .footer-bottom p {
-  margin: 0;
-}
-
-/* Media Query for Smaller Screens */
-@media screen and (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Ensures content is centered */
-  }
-
-  .footer-section {
-    margin-bottom: 20px;
-    width: 100%; /* Makes sections full-width for smaller screens */
-  }
-
-  footer h4 {
-    font-size: 18px;
-  }
-
-  footer p {
-    font-size: 13px;
-  }
-
-  footer .social-links li a {
-    font-size: 16px;
+  .workout-plan {
+    margin-top: 10px;
   }
 }
