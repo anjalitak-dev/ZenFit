@@ -1,4 +1,4 @@
-ZenFit - A Fitness Website
+ZenFit - A Fitness Website         
 ZenFit is a modern and responsive fitness website designed to help users access personalized workout plans, fitness videos, and much more. The website provides a user-friendly interface to browse and create custom workout plans based on individual fitness goals.
 
 Features:  
