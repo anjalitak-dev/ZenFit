@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Workout Plans</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="logo">
+                <span>ZenFit</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#store">Store</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Workouts</a>
+                    <div class="dropdown-content">
+                        <a href="#">Beginner</a>
+                        <a href="#">Intermediate</a>
+                        <a href="#">Advanced</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Articles</a>
+                    <div class="dropdown-content">
+                        <a href="#">Fitness Tips</a>
+                        <a href="#">Nutrition</a>
+                        <a href="#">Recovery</a>
+                    </div>
+                </li>
+                <li><a href="#diet-plans">Diet Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner Section -->
+        <div class="banner">
+            <img src="https://mensvariety.com/wp-content/uploads/2020/03/mountainclimbers-asianman-exercise-man-working-out-2294361.jpg" alt="Workout Banner" class="banner-img">
+            <div class="tagline">
+                <marquee behavior="scroll" direction="left" scrollamount="20">"Expert-designed workouts, personalized plans, guaranteed results. Start your fitness journey today!"</marquee>
+            </div>
+            <div class="cta">
+                <h1>Free Workout Guide</h1>
+                <p>Explore a wide variety of workout plans tailored to your fitness level and goals. Start your transformation today</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="workouts" class="section">
+        <div class="container">
+            <h3 class="section-title" align="center" style="font-size: 36px">Fitness Guides</h3>
+            <div class="workout-grid">
+                <div class="workout-card">
+                    <iframe class="workout-video" id="video1" src="https://www.youtube.com/embed/WDIpL0pjun0?autoplay=1&loop=1&playlist=WDIpL0pjun0&controls=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                    <h4 class="workout-title">Push-Ups</h4>
+                </div>
+                <div class="workout-card">
+                    <iframe class="workout-video" id="video2" src="https://www.youtube.com/embed/UYbsgiiZgao?autoplay=1&loop=1&playlist=UYbsgiiZgao&controls=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                    <h4 class="workout-title">Squats</h4>
+                </div>
+                <div class="workout-card">
+                    <iframe class="workout-video" id="video3" src="https://www.youtube.com/embed/mwlp75MS6Rg?autoplay=1&loop=1&playlist=mwlp75MS6Rg&controls=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                    <h4 class="workout-title">Planks</h4>
+                </div>
+                <div class="workout-card">
+                    <iframe class="workout-video" id="video4" src="https://www.youtube.com/embed/uLVt6u15L98?autoplay=1&loop=1&playlist=uLVt6u15L98&controls=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                    <h4 class="workout-title">Jumping Jacks</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customizable Workout Plan Section -->
+    <section id="custom-workout-plan" class="section">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+            <!-- Left Side Content -->
+            <div style="flex: 1; padding-right: 20px;">
+                <h3 class="section-title" align="left" style="font-size: 36px; margin-bottom: 20px;">Create Your Custom Workout Plan</h3>
+                <p style="font-size: 18px;">Tailor your workout routine to achieve your fitness goals. Select your preferences and get a personalized plan just for you!</p>
+            </div>
+            
+            <!-- Right Side Form -->
+            <div style="flex: 1; background: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">
+                <form class="custom-workout-form" id="customWorkoutForm">
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="goal" style="font-size: 16px;">Choose Your Goal:</label>
+                        <select id="goal" name="goal" style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px;">
+                            <option value="strength">Strength</option>
+                            <option value="endurance">Endurance</option>
+                            <option value="flexibility">Flexibility</option>
+                            <option value="weight_loss">Weight Loss</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="difficulty" style="font-size: 16px;">Select Difficulty Level:</label>
+                        <select id="difficulty" name="difficulty" style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px;">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label for="days" style="font-size: 16px;">How Many Days a Week?</label>
+                        <select id="days" name="days" style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px;">
+                            <option value="3">3 Days</option>
+                            <option value="4">4 Days</option>
+                            <option value="5">5 Days</option>
+                            <option value="6">6 Days</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" style="background-color: #ff5722; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Generate Plan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: contact@zenfit.com</p>
+                <p>Phone: +91 1234567890</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com/zenfit" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com/zenfit" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://instagram.com/zenfit" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 ZenFit | All Rights Reserved</p>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
