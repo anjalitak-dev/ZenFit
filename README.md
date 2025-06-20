@@ -40,5 +40,6 @@
   - User interactions and functionality enhancements
 
 ## 📸 Screenshots
-![image](https://github.com/user-attachments/assets/7e50ae4d-9e41-404a-bd5d-cbd70a1e4d4f)
+![image](https://github.com/user-attachments/assets/e66691c6-4029-49dd-b650-acaebdfa438b)
+
 
